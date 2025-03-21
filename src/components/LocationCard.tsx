@@ -8,19 +8,19 @@ export default function LocationCard({
 }: Readonly<LocationCardProps>) {
   return (
     <div
-      className={` ${openSans.className} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-[#887C68]`}
+      className={` ${openSans.className} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-[#887C68]`}
     >
       {locations.map((item) => (
         <div
           key={item.ID}
-          className="bg-white overflow-hidden drop-shadow-2xl max-w-lg mx-auto flex flex-col h-full"
+          className="bg-white overflow-hidden shadow-[17px_12px_60px_0px_rgba(0,0,0,0.25)] max-w-xl mx-auto flex flex-col h-full"
         >
-          <div className="relative h-50 md:h-60 lg:h-90">
+          <div className="relative h-50 md:h-60 lg:h-80">
             <Image
               src={item.image_url}
               alt={item.post_title}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
 

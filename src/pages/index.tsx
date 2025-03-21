@@ -15,10 +15,10 @@ export default function Home({ data, error }: Readonly<HomeProps>) {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen mt-20 p-4 md:p-8 max-w-9xl mx-auto">
-      <section className="w-full mb-100">
+    <main className="flex flex-col items-center justify-center min-h-screen mt-20 p-4 md:p-8 max-w-8xl md:max-w-8xl lg:max-w-8xl mx-auto">
+      <section className="w-[85%] mb-100">
         <h2
-          className={`text-center ${martelSans.className} text-[#887C68] font-semibold text-[20px] md:text-[28px] leading-[1] tracking-[0%] uppercase mb-8 max-w-[400px] mx-auto`}
+          className={`text-center ${martelSans.className} text-[#887C68] font-semibold text-[20px] md:text-[28px] leading-[1] tracking-[0%] uppercase mb-15 max-w-[400px] mx-auto`}
         >
           Communities We Manage
         </h2>
@@ -43,8 +43,7 @@ export default function Home({ data, error }: Readonly<HomeProps>) {
 
 export async function getServerSideProps() {
   try {
-    const result = await axios.get(
-      "https://devsow.wpengine.com/wp-json/communities/all",
+    const result = await axios.get("https://devsow.wpengine.com/wp-json/communities/all",
       {
         headers: {
           Authorization: `Basic ${process.env.NEXT_PUBLIC_API_AUTH_TOKEN}`,

@@ -115,11 +115,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                   src={image.image_url}
                   alt={image.post_title}
                   fill
-                  className="object-cover"
+                  style={{ objectFit: "cover" }}
                   priority
                 />
-                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent" />
-                <h3 className="absolute bottom-4 left-0 w-full text-center text-white text-[18px] md:text-[18px] lg:text-[28px] font-medium tracking-wider uppercase leading-8">
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/95 to-transparent" />
+                <h3 className="absolute bottom-6 left-0 w-full pb-4 text-center text-white text-[18px] md:text-[18px] lg:text-[28px] font-medium tracking-wider uppercase leading-8">
                   {image.post_title}
                 </h3>
               </div>

@@ -8,9 +8,6 @@ Ensure you have the following versions installed:
 
 - **Node.js**: `v20.19.0` (or higher)
 - **npm**: `8.19.0` (or higher) (comes with Node.js)
-- **yarn**: `1.22.19` (optional, if you prefer Yarn over npm)
-- **pnpm**: `8.6.0` (optional, if you prefer pnpm over npm)
-- **bun**: `0.7.0` (optional, if you prefer Bun over npm)
 
 ### Installation
 

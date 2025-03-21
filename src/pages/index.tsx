@@ -16,11 +16,12 @@ export default function Home({ data, error }: Readonly<HomeProps>) {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen mt-20 p-4 md:p-8 max-w-8xl md:max-w-8xl lg:max-w-8xl mx-auto">
-      <section className="w-[85%] mb-80">
+      <section className="w-[85%] md:mb-80 mb-40 lg:mb-80">
         <h2
           className={`text-center ${martelSans.className} text-[#887C68] font-semibold text-[20px] md:text-[28px] leading-[1] tracking-[0%] uppercase mb-15 max-w-[400px] mx-auto`}
         >
-          Communities We Manage
+          <span className="block md:inline">Communities </span>
+          <span className="block md:inline">We Manage</span>
         </h2>
         <div className="w-full max-w-[1650px] mx-auto">
           <LocationCard locations={data} />
